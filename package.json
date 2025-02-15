@@ -1,5 +1,5 @@
 {
-  "name": "dynamic-world-wide-export",
+  "name": "pl-brothers-exporters-llp",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -20,7 +20,6 @@
     "react-icons": "^5.4.0",
     "react-query": "^3.39.3",
     "react-router-dom": "^7.1.5",
-    "react-shapes": "^0.1.0",
     "semantic-ui-css": "^2.5.0",
     "semantic-ui-react": "^2.1.5",
     "swiper": "^11.1.15"
