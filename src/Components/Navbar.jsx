@@ -43,7 +43,7 @@ const Navbar = () => {
       <div className="max-w-full h-20 mx-auto px-4 sm:px-6 lg:px-12 flex justify-between items-center">
         <div className='w-[35vw] md:w-[25vw] lg:w-[15vw]'>
           <Link to="/">
-            <img src="/Logo.png" alt="Logo" width={100} height={100} className='w-full object-cover' />
+            <img src="https://res.cloudinary.com/dtxiapgsx/image/upload/v1739608697/Logo_ywkwnp.png" alt="Logo" width={100} height={100} className='w-full object-cover' />
           </Link>
         </div>
         {/* Hamburger menu button */}

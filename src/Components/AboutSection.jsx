@@ -17,7 +17,7 @@ export default function AboutSection() {
   };
   return (
     <div className="relative isolate overflow-hidden bg-black py-24 sm:py-32 flex flex-col lg:flex-row-reverse items-center lg:items-center">
-    <img alt="" src="bgphoto.jpg" className="absolute opacity-30 inset-0 -z-10 w-full h-full object-cover object-center" />
+    <img alt="BG-photo" src="https://res.cloudinary.com/dtxiapgsx/image/upload/f_auto,q_auto/v1739617353/bgphoto_p1aog2.jpg" width={300} height={300} className="absolute opacity-30 inset-0 -z-10 w-full h-full object-cover object-center" />
     <div className="flex flex-col lg:flex-row-reverse items-center px-6 sm:px-6 md:px-12 lg:px-12">
 
       <div ref={ref} className="w-full lg:w-1/2 flex justify-center items-center">

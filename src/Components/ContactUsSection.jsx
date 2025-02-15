@@ -99,7 +99,7 @@ function ContactUsSection() {
                         className='categories-heading text-[6.5vw] sm:text-[4vw] md:text-[2.8vw] lg:text-[2.5vw] xl:text-[1.8vw] font-bold'>Products</motion.h1>
                         <div className='mt-2 flex flex-col gap-2'>
                             {quickLinks.map((link) => (
-                                <motion.div id='lefttext' initial={{ opacity: 0, x : 300}}
+                                <motion.div key={link.id} id='lefttext' initial={{ opacity: 0, x : 300}}
                                 whileInView={{ opacity: 1, x : 0 }}
                                 transition={{ duration: 2, ease: 'easeInOut', type: 'spring', stiffness: 80 }}>
                                     <Link to={`/product/${link.id}`} key={link.id} className='categories-subtext text-[4.5vw] sm:text-[3vw] md:text-[2vw] lg:text-[1.2vw] xl:text-[1.2vw]  hover:text-gray-300 transition-colors'>{link.title}</Link>

@@ -36,7 +36,7 @@ const PopularProducts = () => {
     const productCards = useMemo(() => (
       popularProducts.map((card)=>{
         return(
-          <div className="flex flex-col items-center justify-center gap-2 bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-105">
+          <div key={card.id} className="flex flex-col items-center justify-center gap-2 bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 hover:scale-105">
                 <div className='w-full aspect-square rounded-xl overflow-hidden hover:rounded-b-none transition-all duration-300 relative group'>
                   <img 
                     loading="lazy"
