@@ -26,7 +26,7 @@ const Gallery = () => {
   
   const galleryImages = useMemo(() => (
     images.map((image, index) => (
-      <div key={image.id} className={`flex-shrink-0 w-[90vw] sm:w-[45vw] md:w-[23vw] ${index % 2 == 0 ? 'h-[95vw] sm:h-[50vw] md:h-[28vw]' : 'h-[90vw] sm:h-[45vw] md:h-[23vw]'} overflow-hidden rounded-xl bg-red-800`}>
+      <div key={image.id} className={`flex-shrink-0 w-[90vw] sm:w-[45vw] md:w-[23vw] ${index % 2 == 0 ? 'h-[95vw] sm:h-[50vw] md:h-[28vw]' : 'h-[90vw] sm:h-[45vw] md:h-[23vw]'} overflow-hidden rounded-xl`}>
         <div className='w-full h-full'>
           <img loading='lazy' src={image.imageUrl} alt={image.title} className='w-full h-full object-cover' />
         </div>

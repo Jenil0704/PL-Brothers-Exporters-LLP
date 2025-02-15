@@ -56,7 +56,7 @@ const Products = () => {
             </motion.div>
             <div className="pb-16">
                 {/* products by category */}
-                {Object.entries(productsByCategory).map(([category, products]) => (
+                {productsByCategory && Object.entries(productsByCategory).map(([category, products]) => (
                 <div key={category} className="mt-16 px-4 sm:px-6 md:px-12 lg:px-12">
                     <motion.h1 ref={ref} initial={{ opacity: 0}}
                     animate={isInView ? { opacity: 1 } : {}}
@@ -68,7 +68,7 @@ const Products = () => {
                             {products.map((product, index) => (
                                 <div key={product.id} className="bg-white rounded-xl shadow-md overflow-hidden transition-transform hover:scale-105">
                                     <div className="h-48 overflow-hidden">
-                                        <img loading={index === 4 ? "eager" : "lazy"} src={product.image} height={200} width={300} alt={product.title} className="w-full h-full object-cover" />
+                                        <img rel='preload' loading={index === 4 ? "eager" : "lazy"} src={product.image} height={200} width={300} alt={product.title} className="w-full h-full object-cover" />
                                     </div>
                                     <div className="p-4">
                                         <h3 className="categories-subtext text-[4.5vw] sm:text-[3vw] md:text-[2vw] lg:text-lg font-semibold mb-2">{product.title}</h3>
@@ -80,7 +80,7 @@ const Products = () => {
                             ))}
                         </div>
                     ) : (
-                        <p className="mt-5 text-gray-500">No {category} products available.</p>
+                        <p className="mt-5 text-center flex justify-center items-center text-gray-500">No {category} products available.</p>
                     )}
                 </div>
                 ))}
