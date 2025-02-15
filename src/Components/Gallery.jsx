@@ -49,39 +49,6 @@ const Gallery = () => {
       <div className='w-full mt-16'>
         <div className='flex flex-col md:flex-row items-center justify-center gap-2 flex-no-wrap overflow-x-hidden'>
             {galleryImages}
-            {/* <div className='flex-shrink-0 w-[90vw] sm:w-[45vw] md:w-[23vw] h-[95vw] sm:h-[50vw] md:h-[28vw] overflow-hidden rounded-xl bg-red-800'>
-              <div className='w-full h-full'>
-                <img src="public/Green Peas Kachori.jpg" alt="Green Peas Kachori" className='w-full h-full object-cover' />
-              </div>
-            </div>
-            
-            <div className='flex-shrink-0 flex items-center justify-center w-[90vw] sm:w-[45vw] md:w-[23vw] h-[95vw] sm:h-[50vw] md:h-[28vw] overflow-hidden rounded-xl'>
-              <div className='w-full h-[90vw] sm:h-[45vw] md:h-[23vw] rounded-xl overflow-hidden'>
-                <img src="public/moong dal.jpg" alt="Moong Dal" className='w-full h-full object-cover' />
-              </div>
-            </div>
-            
-            <div className='hidden md:flex flex-shrink-0 w-[90vw] sm:w-[45vw] md:w-[23vw] h-[95vw] sm:h-[50vw] md:h-[28vw] overflow-hidden rounded-xl bg-red-800'>
-              <div className='w-full h-full'>
-                <img src="public/Green Peas Kachori.jpg" alt="Green Peas Kachori" className='w-full h-full object-cover' />
-              </div>
-            </div>
-            
-            <div className='hidden md:flex flex-shrink-0  items-center justify-center w-[90vw] sm:w-[45vw] md:w-[23vw] h-[95vw] sm:h-[50vw] md:h-[28vw] overflow-hidden rounded-xl'>
-              <div className='w-full h-[90vw] sm:h-[45vw] md:h-[23vw] rounded-xl overflow-hidden'>
-                <img src="public/black peas.jpg" alt="" className='w-full h-full object-cover' />
-              </div>
-            </div>
-            
-            <div className='hidden md:flex flex-shrink-0 w-[90vw] sm:w-[45vw] md:w-[23vw] h-[95vw] sm:h-[50vw] md:h-[28vw] overflow-hidden rounded-xl bg-red-800'>
-              <div className='w-full h-full'>
-                <img src="public/Surti Petish.jpg" alt="" className='w-full h-full object-cover' />
-              </div>
-            </div> */}
-
-
-
-
         </div>
       </div>
     </div>
@@ -90,22 +57,3 @@ const Gallery = () => {
 }
 
 export default Gallery
-
-const products = [
-  {
-    id: 1,
-    image: 'public/Mini Punjabi Samosa.jpg',
-  },
-  {
-    id: 2,
-    image: '/moong dal.jpg',
-  },
-  {
-    id: 3,
-      image: 'public/split chichpeas.jpg',
-    },
-  {
-    id: 4,
-    image: 'public/yellow peas.jpg',
-  },
-]

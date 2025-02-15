@@ -3,7 +3,8 @@ import { useParams } from "react-router-dom";
 import { collection, query, where, getDocs } from "firebase/firestore";
 import ContactUsSection from "./ContactUsSection";
 import { db } from "../../firebaseConfig";
-
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 const ProductDescription = () => {
     const { id } = useParams();
     const [product, setProduct] = useState(null);
@@ -45,10 +46,12 @@ const ProductDescription = () => {
 
     return (
         <div className="pt-32 w-full bg-[#FAFAFA] text-black">
-            <div className="w-full flex flex-col items-center text-center space-y-5">
+            <motion.div initial={{ opacity: 0, scale: 0.6}}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 2, ease: 'easeInOut', type: 'spring', stiffness: 80 }} className="w-full flex flex-col items-center text-center space-y-5">
                 <h1 className="text-[8.5vw] sm:text-[6vw] md:text-[4vw] lg:text-[3.3vw] xl:text-[3vw] 2xl:text-[2.8vw] font-semibold">{product.title}</h1>
                 <div className="w-24 h-1 bg-gradient-to-r from-blue-800 to-teal-800 rounded-full"></div>
-            </div>
+            </motion.div>
             <div className="mb-16">
                 <div className="mt-10 px-10 w-full flex flex-col-reverse md:flex-row gap-5 justify-center items-start">
                     <div className="py-5 sm:py-8 md:py-10 w-full md:w-1/2 rounded-lg flex flex-col gap-3 justify-center">

@@ -10,6 +10,7 @@
 }
 .categories-heading{
     font-family: 'Oswald';
+    min-height: 50px;
 }
 .categories-subtext{
     font-family: 'Montserrat';

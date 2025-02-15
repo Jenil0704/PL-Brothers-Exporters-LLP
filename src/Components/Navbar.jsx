@@ -40,10 +40,10 @@ const Navbar = () => {
         showNavbar ? 'translate-y-0' : '-translate-y-full'
       } ${isScrolled ? 'backdrop-blur-sm bg-opacity-70 transition-all duration-300' : ''}`}
     >
-      <div className="max-w-full h-20 mx-auto px-4 sm:px-6 lg:px-12 flex justify-between items-center py-4">
-        <div className='w-[15vw]  '>
+      <div className="max-w-full h-20 mx-auto px-4 sm:px-6 lg:px-12 flex justify-between items-center">
+        <div className='w-[35vw] md:w-[25vw] lg:w-[15vw]'>
           <Link to="/">
-            <img src="/Logo.png" alt="" className='w-full object-cover' />
+            <img src="/Logo.png" alt="Logo" width={100} height={100} className='w-full object-cover' />
           </Link>
         </div>
         {/* Hamburger menu button */}
@@ -92,24 +92,22 @@ const Navbar = () => {
       {isMenuOpen && (
         <ul className="sm:hidden px-4 py-2 space-y-2 shadow-lg bg-opacity-20 backdrop-blur-sm">
           <li>
-            <a href="#" className="block hover:underline">
+            <Link to="/" className="block hover:underline">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="block hover:underline">
+            <Link to="/products" className="block hover:underline">
               Products
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="block hover:underline">
-              Blog
-            </a>
+            <a href="/files/PL_Brothers_Exporters_LLP.pdf" download="PL_Brothers_Exporters_LLP.pdf" className='block hover:underline'>Brochure</a>
           </li>
           <li>
-            <a href="#" className="block hover:underline">
+            <Link to="/contact" className="block hover:underline">
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
       )}
