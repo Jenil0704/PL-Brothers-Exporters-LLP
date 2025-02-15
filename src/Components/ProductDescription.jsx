@@ -38,10 +38,10 @@ const ProductDescription = () => {
     }, [id]);
 
     if (loading) {
-        return <div className="text-center text-xl py-10">Loading...</div>
+        return <div className="text-center text-xl py-36">Loading...</div>
     }
     if (error) {
-        return <div className="text-center text-xl py-10 text-red-500">{error}</div>
+        return <div className="text-center text-xl py-36 text-red-500">{error}</div>
     }
 
     return (

@@ -84,7 +84,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-          <a href="/files/PL_Brothers_Exporters_LLP.pdf" download="PL_Brothers_Exporters_LLP.pdf" className='categories-subtext text-[4.5vw] sm:text-[3vw] md:text-[2vw] lg:text-[1.2vw] xl:text-[1.2vw]  hover:underline '>Brochure</a>
+          <a target='_blank' href="https://drive.google.com/file/d/1f66c3G0hPhy8jbY9ABlnb3u_REAUM2HQ/view?usp=drive_link"  className='categories-subtext text-[4.5vw] sm:text-[3vw] md:text-[2vw] lg:text-[1.2vw] xl:text-[1.2vw]  hover:underline '>Brochure</a>
           </li>
         </ul>
       </div>
@@ -102,7 +102,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <a href="/files/PL_Brothers_Exporters_LLP.pdf" download="PL_Brothers_Exporters_LLP.pdf" className='block hover:underline'>Brochure</a>
+            <a href="https://drive.google.com/file/d/1f66c3G0hPhy8jbY9ABlnb3u_REAUM2HQ/view?usp=drive_link" target='_blank' className='block hover:underline'>Brochure</a>
           </li>
           <li>
             <Link to="/contact" className="block hover:underline">

@@ -28,7 +28,7 @@ const Banner = () => {
   ];
 
   return (
-    <div ref={ref} className="container mx-auto px-4 py-16 bg-gradient-to-tr from-zinc-900 to-[#0b3238] text-white">
+    <div ref={ref} className="container max-w-full mx-auto px-4 py-16 bg-gradient-to-tr from-zinc-900 to-[#0b3238] text-white">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {features.map((feature, index) => (
           <motion.div

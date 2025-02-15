@@ -63,9 +63,10 @@ function Slider() {
       <div className="h-full absolute inset-0 bg-cover bg-center">
         {image ? (
           <img
+            rel='preload'
             loading="lazy"
             className="w-full h-full object-cover object-center"
-            src={image}
+            src="https://res.cloudinary.com/dtxiapgsx/image/upload/v1739553158/landing_gkbd9j.jpg"
             alt="Landing"
           />
         ) : (

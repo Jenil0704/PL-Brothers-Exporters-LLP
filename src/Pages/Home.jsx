@@ -22,7 +22,7 @@ const Home = () => {
         {/* Open Graph (Facebook) */}
         <meta property="og:title" content="PL Brothers Exporters - High-Quality Frozen & Pulse Products" />
         <meta property="og:description" content="Your trusted supplier for premium frozen and pulses products. Check out our collection now!" />
-        <meta property="og:image" content="https://yourdomain.com/images/og-image.jpg" />
+        <meta property="og:image" content="https://res.cloudinary.com/dtxiapgsx/image/upload/v1739608697/Logo_ywkwnp.png" />
         <meta property="og:type" content="website" />
 
         {/* Twitter Meta Tags */}
@@ -40,7 +40,7 @@ const Home = () => {
             "description": "PL Brothers Exporters LLP is a trusted supplier of premium frozen and pulses products.",
             "contactPoint": {
               "@type": "ContactPoint",
-              "telephone": "+91-XXXXXXXXXX",
+              "telephone": "+91-9574005006",
               "contactType": "Customer Support",
               "areaServed": "Worldwide",
               "availableLanguage": ["English"]

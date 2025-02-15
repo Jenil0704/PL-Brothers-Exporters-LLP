@@ -23,7 +23,9 @@ export default function AboutSection() {
       <div ref={ref} className="w-full lg:w-1/2 flex justify-center items-center">
         <motion.img
           loading="lazy"
-          src="Logo.png"
+          width={100}
+          height={100}
+          src="https://res.cloudinary.com/dtxiapgsx/image/upload/v1739608697/Logo_ywkwnp.png"
           alt="Logo"
           className="lg:w-1/2 w-full sm:w-[50vw] md:w-[45vw] xl:w-[35vw] mb-6 lg:mb-0"
           variants={imageVariants}
